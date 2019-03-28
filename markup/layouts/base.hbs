@@ -24,21 +24,21 @@
 {{/block}}
 
 {{#block "body"}}
-  <body class="{{bodyclass}}">
-    {{#block "header"}}
+  <body class="{{bodyclass}}" data-spy="scroll" data-target="#navbar" data-offset="60">
+    {{!-- {{#block "header"}}
     {{> header}}
-    {{/block}}
+    {{/block}} --}}
 
     {{#block "main"}}
     {{/block}}
 
-    {{#block "footer"}}
+    {{!-- {{#block "footer"}}
     {{> footer}}
-    {{/block}}
+    {{/block}} --}}
 
     {{#block "scripts"}}
     {{#each scripts}}
-    <script defer src="{{this}}"></script>
+    <script src="{{this}}"></script>
     {{/each}}
     {{/block}}
   </body>

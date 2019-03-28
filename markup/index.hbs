@@ -1,34 +1,439 @@
 ---
-alternates:
-  - language: es
-    uri: /es
-  - language: fr
-    uri: /fr
 bodyclass: index
-language: en
+language: ua
 meta:
-  author: Author Name
-  description: Some meta description
-  keywords: Some, Meta, Keywords
-  robots: index, follow
+author: Kyrylo Gerasymenko
+description: QA Open 2019
+keywords: QA, Conference, Mykolaiv, 2019
+robots: index, follow
 scripts:
-  - ../typescript/index.ts
+- ../lib/wow.js
+- ../lib/jquery.js
+- ../js/jquery-init.js
+- ../lib/universal-parallax.min.js
+- ../lib/lightbox/js/lightbox.min.js
+- ../lib/popper.min.js
+- ../lib/bootstrap.min.js
+- ../lib/slippry/slippry.min.js
+- ../js/main.js
+- ../typescript/index.ts
 stylesheets:
-  - ../scss/index.scss
-title: Index | Parcel Bundler With Handlebars
+- ../lib/bootstrap.min.css
+- ../lib/animate.css
+- https://use.fontawesome.com/releases/v5.7.2/css/all.css
+- ../lib/lightbox/css/lightbox.min.css
+- ../lib/slippry/slippry.css
+- ../lib/universal-parallax.min.css
+- ../scss/index.scss
+title: QA Open 2019
 uri: /
 ---
 
 {{#extend "base"}}
-  {{#content "main"}}
-    <main>
-      <h1>Welcome from index.hbs</h1>
-      <a href="./about.hbs">about page</a>
-      {{#isnt NODE_ENV "production"}}
-      <p>I will disappear on production builds</p>
-      {{/isnt}}
-      <br />
-      {{> states}}
-    </main>
-  {{/content}}
+{{#content "main"}}
+<nav class="navbar fixed-top header navbar-expand-lg bg-dark navbar-dark" id="navbar">
+  <a class="navbar-brand" href="#home">QA OPEN 2019</a>
+  <button class="navbar-toggler" onclick="toggleTransparency()" type="button" data-toggle="collapse"
+    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ПОДРОБИЦІ</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#location">МІСЦЕ</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#prevEvent">ГАЛЕРЕЯ</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#speakers">СПІКЕРИ</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#agenda">РОЗКЛАД</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#partners">ПАРТНЕРИ</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<section id="home">
+  <div class="parallax header-parallax"></div>
+  <div class="extra-bg"></div>
+  <div class="welcome-section-wrapper container">
+    <h1 class="title">
+      QA OPEN <span class="title-muted">CONFERENCE</span>
+    </h1>
+    <h2 class="subtitle">
+      <i class="far fa-calendar-alt"></i> <span class="eventDate"></span> | Миколаїв
+    </h2>
+    <div class="countdown">
+      <div class="countdown-item">
+        <div id="countdown-days">00</div>
+        <div class="countdown-text" id="countdown-days-text">днів</div>
+      </div>
+      <div class="countdown-item">
+        <div id="countdown-hours">00</div>
+        <div class="countdown-text" id="countdown-hours-text">годин</div>
+      </div>
+      <div class="countdown-item">
+        <div id="countdown-minutes">00</div>
+        <div class="countdown-text" id="countdown-minutes-text">хвилин</div>
+      </div>
+      <div class="countdown-item">
+        <div id="countdown-seconds">00</div>
+        <div class="countdown-text" id="countdown-seconds-text">секунд</div>
+      </div>
+    </div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdieVc3pUffi0sSoca204Opsq1Tg_n6rsd7Qe3DI2xZkNM0_w/viewform"
+      class="btn-register" target="_blank">
+      Зареєструватись
+    </a>
+  </div>
+</section>
+<section class="container fadeIn slow" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 margin-t75">
+        <h5 class="subtitle text-center">чому варто прийти</h5>
+        <h2 class="title text-uppercase line-after">Про захід</h2>
+
+        <div class="content" id="content-short">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="location" class="wow fadeIn slow">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-sm-12 col-md-6 margin-t75">
+        <div id="location-square">
+          <div id="location-square-background"></div>
+          <div id="location-square-content">
+            <div class="row">
+              <div class="col-6">
+                <h3 class="secondary-color" id="location-square-content-title">
+                  QA
+                  <br>
+                  OPEN
+                </h3>
+              </div>
+              <div class="col-auto">
+                <h3 class="" id="location-square-content-date">2019</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12" id="location-square-content-subtext">
+                ТЦ Кит, 2-й поверх
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12" id="location-square-content-text">
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 px-4 margin-t75 ">
+        <h2 class="text-center mt-md-3 mt-sm-1">Приєднуйтесь!</h2>
+        <p id="content-long" class="mt-1">Цього разу конференція проходитиме за адресою: ТРЦ "Кит", вул. Мала Морська,
+          103</p>
+        <p id="content-long" class="mt-1">Дата та час: 20 квітня (субота), з 10:00 до 17:00, початок реєстрації о 9:30
+        </p>
+        <p id="content-long" class="mt-1">Для участі у заході необхідно пройти попередню реєстрацію. Будь ласка,
+          зверніть увагу, що кількість місць обмежена. Після реєстрації очікуйте на лист щодо вашої участі.</p>
+
+        <div class="text-center mt-md-2 mt-sm-4">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdieVc3pUffi0sSoca204Opsq1Tg_n6rsd7Qe3DI2xZkNM0_w/viewform"
+            class="btn-register" target="_blank">
+            Зареєструватись
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.6778752534785!2d31.994058030872342!3d46.953419886325115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cbe6aa75adf7%3A0xb4c06fac0cb77a62!2z0JrQmNCiLCDQotCe0KDQk9Ce0JLQni3QoNCQ0JfQktCb0JXQmtCQ0KLQldCb0KzQndCr0Jkg0KbQldCd0KLQoA!5e0!3m2!1sen!2sua!4v1551964408122"
+    frameborder="0" id="map" allowfullscreen></iframe>
+</section>
+<section id="prevEvent" class="wow fadeIn slow" data-parallax="scroll">
+
+  <div class="prevEvent-header section-header">
+    <h5 class="subtitle text-center">Як це відбувалося</h5>
+    <h2 class="line-after">
+      QA OPEN 2018
+    </h2>
+    <div class="pic-gallery mobile-hide">
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5512.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5512.jpg" data-toggle="modal" data-target="#carousel-pic"
+                alt="_IGP5512.jpg"></a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5518.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5518.jpg" alt="_IGP5518.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5716.jpg" data-lightbox="Conference"><img
+                src="./images/QA open -2018/_IGP5716.jpg" alt="_IGP5716.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5717.jpg" data-lightbox="Conference"><img
+                src="./images/QA open -2018/_IGP5717.jpg" alt="_IGP5717.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5652.jpg" data-lightbox="Conference"><img
+                src="./images/QA open -2018/_IGP5652.jpg" alt="_IGP5652.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5528.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5528.jpg" alt="_IGP5528.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5787.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5787.jpg" alt="_IGP5787.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5536.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5536.jpg" alt="_IGP5536.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5740.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5740.jpg" alt="_IGP5740.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5662.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5662.jpg" alt="_IGP5662.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5797.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5797.jpg" alt="_IGP5797.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5522.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5522.jpg" alt="_IGP5522.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5509.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5509.jpg" alt="_IGP5509.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5516.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5516.jpg" alt="_IGP5516.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5700.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5700.jpg" alt="_IGP5700.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5804.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5804.jpg" alt="_IGP5804.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5821.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5821.jpg" alt="_IGP5821.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5508.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5508.jpg" alt="_IGP5508.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+      <div class="gallery-column">
+        <ul>
+          <li>
+            <a href="./images/QA open -2018/_IGP5576.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5576.jpg" alt="_IGP5576.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5791.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5791.jpg" alt="_IGP5791.jpg"> </a>
+          </li>
+          <li>
+            <a href="./images/QA open -2018/_IGP5633.jpg" data-lightbox="Conference"> <img
+                src="./images/QA open -2018/_IGP5633.jpg" alt="_IGP5633.jpg"> </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="slider-mobile">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <ul id="thumbnails">
+            <li>
+              <a href="#slide1">
+                <img src="./images/QA open -2018/_IGP5787.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide2">
+                <img src="./images/QA open -2018/_IGP5522.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide3">
+                <img src="./images/QA open -2018/_IGP5509.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide4">
+                <img src="./images/QA open -2018/_IGP5518.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide5">
+                <img src="./images/QA open -2018/_IGP5528.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide6">
+                <img src="./images/QA open -2018/_IGP5576.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide7">
+                <img src="./images/QA open -2018/_IGP5717.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide8">
+                <img src="./images/QA open -2018/_IGP5791.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide9">
+                <img src="./images/QA open -2018/_IGP5797.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide10">
+                <img src="./images/QA open -2018/_IGP5804.jpg">
+              </a>
+            </li>
+          </ul>
+          <div class="thumb-box">
+            <ul class="thumbs">
+              <li><a href="#1" data-slide="1"><img src="./images/QA open -2018/_IGP5787.jpg"></a></li>
+              <li><a href="#2" data-slide="2"><img src="./images/QA open -2018/_IGP5522.jpg"></a></li>
+              <li><a href="#3" data-slide="3"><img src="./images/QA open -2018/_IGP5509.jpg"></a></li>
+              <li><a href="#4" data-slide="4"><img src="./images/QA open -2018/_IGP5518.jpg"></a></li>
+              <li><a href="#5" data-slide="5"><img src="./images/QA open -2018/_IGP5528.jpg"></a></li>
+              <li><a href="#6" data-slide="6"><img src="./images/QA open -2018/_IGP5576.jpg"></a></li>
+              <li><a href="#7" data-slide="7"><img src="./images/QA open -2018/_IGP5717.jpg"></a></li>
+              <li><a href="#8" data-slide="8"><img src="./images/QA open -2018/_IGP5791.jpg"></a></li>
+              <li><a href="#9" data-slide="9"><img src="./images/QA open -2018/_IGP5797.jpg"></a></li>
+              <li><a href="#10" data-slide="10"><img src="./images/QA open -2018/_IGP5804.jpg"></a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="speakers" class="wow fadeIn slow">
+  <div id="speakersParallax" class="parallax speakers-parallax"></div>
+  <div class="extra-bg"></div>
+  <div class="container">
+    <div class="speakers-header section-header">
+      <h2 class="line-after">СПІКЕРИ *</h2>
+      <i>* Інформація щодо спікерів буде уточнюватись та доповнюватись.</i>
+    </div>
+    <div class="speakers-body">
+
+
+    </div>
+  </div>
+</section>
+
+<section id="agenda" class="wow fadeIn slow">
+  <div class="container">
+    <div class="agenda-header section-header">
+      <h2 class="line-after">РОЗКЛАД *</h2>
+      <i>* Інформація стосовно розкладу буде уточнюватись та доповнюватись.</i>
+    </div>
+    <div class="agenda-body">
+      <table class="table table-hover agenda-table">
+        <thead>
+          <tr class="agenda-table-header">
+            <th class="mobile-hide" scope="col">#</th>
+            <th scope="col">Початок</th>
+            <th scope="col">Кімната №1</th>
+            <th scope="col">Кімната №2</th>
+          </tr>
+        </thead>
+        <tbody id="agenda-table">
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="partners" class="partners wow fadeIn slow">
+  <div class="container">
+    <h2 class="line-after text-center">ПАРТНЕРИ</h2>
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <div class="partners__img__wrapper">
+          <img class="partners__img" src="images/partners/lits_logo.png" alt="">
+        </div>
+        <div class="partners__description">"LITS Mykolaiv" IТ-школа майбутньго, створена з метою надати можливість
+          кожному, отримати виключно актуальні знання та освоїти практичні вміння, що допоможуть стати затребуваними
+          спеціалістами на ринку праці ІТ.</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-items">
+      <a class="navbar-brand link" href="#">GlobalLogic</a>
+      <div class="contacts">
+
+        <a id="card-caption-facebook" href="#"><i class="fab link card-caption  fa-facebook-square"></i></a>
+        <a id="card-caption-twitter" href="#"><i class="fab link card-caption fa-twitter-square"></i></a>
+        <a id="card-caption-mail" href="#"><i class="far link card-caption fa-envelope"></i></a>
+        <a id="card-caption-linkedin" href="#"><i class="fab link card-caption fa-linkedin"></i></a>
+      </div>
+    </div>
+    <span class="copyright mobile-block">2019 Copyright GlobalLogic. All rights reserved.</span>
+  </div>
+</footer>
+{{/content}}
 {{/extend}}

@@ -10,13 +10,11 @@ scripts:
 - ../lib/wow.js
 - ../lib/jquery.js
 - ../js/jquery-init.js
-- ../lib/universal-parallax.min.js
 - ../lib/lightbox/js/lightbox.min.js
 - ../lib/popper.min.js
 - ../lib/bootstrap.min.js
 - ../lib/slippry/slippry.min.js
 - ../js/main.js
-- ../typescript/index.ts
 stylesheets:
 - ../lib/bootstrap.min.css
 - ../lib/animate.css
@@ -173,119 +171,20 @@ uri: /
       QA OPEN 2018
     </h2>
     <div class="pic-gallery mobile-hide">
-      <div class="gallery-column">
+      {{#each gallery as |column|}}
+       <div class="gallery-column">
         <ul>
+          {{#each column as |url|}}
           <li>
-            <a href="./images/QA open -2018/_IGP5512.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5512.jpg" data-toggle="modal" data-target="#carousel-pic"
-                alt="_IGP5512.jpg"></a>
+            <a href="{{url}}" data-lightbox="Conference">
+              <img
+                src="{{url}}" data-toggle="modal" data-target="#carousel-pic">
+            </a>
           </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5518.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5518.jpg" alt="_IGP5518.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5716.jpg" data-lightbox="Conference"><img
-                src="./images/QA open -2018/_IGP5716.jpg" alt="_IGP5716.jpg"> </a>
-          </li>
+          {{/each}}
         </ul>
-      </div>
-      <div class="gallery-column">
-        <ul>
-          <li>
-            <a href="./images/QA open -2018/_IGP5717.jpg" data-lightbox="Conference"><img
-                src="./images/QA open -2018/_IGP5717.jpg" alt="_IGP5717.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5652.jpg" data-lightbox="Conference"><img
-                src="./images/QA open -2018/_IGP5652.jpg" alt="_IGP5652.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5528.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5528.jpg" alt="_IGP5528.jpg"> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="gallery-column">
-        <ul>
-          <li>
-            <a href="./images/QA open -2018/_IGP5787.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5787.jpg" alt="_IGP5787.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5536.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5536.jpg" alt="_IGP5536.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5740.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5740.jpg" alt="_IGP5740.jpg"> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="gallery-column">
-        <ul>
-          <li>
-            <a href="./images/QA open -2018/_IGP5662.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5662.jpg" alt="_IGP5662.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5797.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5797.jpg" alt="_IGP5797.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5522.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5522.jpg" alt="_IGP5522.jpg"> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="gallery-column">
-        <ul>
-          <li>
-            <a href="./images/QA open -2018/_IGP5509.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5509.jpg" alt="_IGP5509.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5516.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5516.jpg" alt="_IGP5516.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5700.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5700.jpg" alt="_IGP5700.jpg"> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="gallery-column">
-        <ul>
-          <li>
-            <a href="./images/QA open -2018/_IGP5804.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5804.jpg" alt="_IGP5804.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5821.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5821.jpg" alt="_IGP5821.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5508.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5508.jpg" alt="_IGP5508.jpg"> </a>
-          </li>
-        </ul>
-      </div>
-      <div class="gallery-column">
-        <ul>
-          <li>
-            <a href="./images/QA open -2018/_IGP5576.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5576.jpg" alt="_IGP5576.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5791.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5791.jpg" alt="_IGP5791.jpg"> </a>
-          </li>
-          <li>
-            <a href="./images/QA open -2018/_IGP5633.jpg" data-lightbox="Conference"> <img
-                src="./images/QA open -2018/_IGP5633.jpg" alt="_IGP5633.jpg"> </a>
-          </li>
-        </ul>
-      </div>
+       </div>
+      {{/each}}
     </div>
   </div>
   <div class="container" id="slider-mobile">

@@ -14,7 +14,6 @@
     "parcel-plugin-handlebars": "^0.4.1",
     "rimraf": "^2.6.3",
     "serve": "^6.4.8",
-    "typescript": "^2.6.2",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7"
   }

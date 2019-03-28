@@ -273,8 +273,9 @@ uri: /
       <i>* Інформація щодо спікерів буде уточнюватись та доповнюватись.</i>
     </div>
     <div class="speakers-body">
-
-
+    {{#each speakers}}
+      {{> speaker}}
+    {{/each}}
     </div>
   </div>
 </section>

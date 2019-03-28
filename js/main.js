@@ -11,10 +11,9 @@ new universalParallax().init({
     speed: 10.0
 });
 
-import { speakers, events, baseDateLocale, eventDateSource, shortInfo } from './speakers-info-mock';
+import { events, baseDateLocale, eventDateSource, shortInfo } from './speakers-info-mock';
 
 $(document).ready(() => {
-    addSpeakers(speakers);
     createAggendaTable(speakers, events);
     const thumbs = $('#thumbnails').slippry({
         // general elements & wrapper
@@ -202,14 +201,6 @@ function createCard(infoObj) {
                 </div>
 
     `)
-}
-
-function addSpeakers(speakers) {
-    let text = ''
-    speakers.forEach((item) => {
-        text += createCard(item);
-    })
-    $('.speakers-body').append(text);
 }
 
 function createScheduleObj(infoObj) {

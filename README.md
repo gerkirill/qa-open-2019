@@ -1,0 +1,1 @@
+taken from https://github.com/robbiedigital/parcel-plugin-handlebars/tree/master/examples/advanced

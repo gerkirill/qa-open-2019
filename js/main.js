@@ -1,8 +1,4 @@
-// const universalParallax = parcelRequire('../universal-parallax');
 import universalParallax from './universal-parallax';
-// console.log(universalParallax);
-// window.universalParallax = jquery.fn.parallax.Constructor;
-// import * as universalParallax from 'universal-parallax';
 
 import WOW from '../lib/wow';
  new WOW().init();
@@ -14,7 +10,7 @@ new universalParallax().init({
 import { events, baseDateLocale, eventDateSource, shortInfo } from './speakers-info-mock';
 
 $(document).ready(() => {
-    createAggendaTable(speakers, events);
+    // createAggendaTable(speakers, events);
     const thumbs = $('#thumbnails').slippry({
         // general elements & wrapper
         slippryWrapper: '<div class="slippry_box thumbnails" />',
@@ -150,58 +146,7 @@ $(document).ready(() => {
 
 });
 
-function createCard(infoObj) {
-    let name = infoObj.name || 'defaultname';
-    let surname = infoObj.surname || 'defaultsurname';
-    let profession = infoObj.profession || 'defaultProf';
-    let exp = infoObj.experience || 'defaultexp';
-    let shortInfo = infoObj.shortInfo || 'defaultShortInfo';
 
-    let picture = infoObj.pic || './images/speakers/default.png';
-
-    let links = {
-        fb: infoObj.facebook || '#',
-        twt: infoObj.twitter || '#',
-        email: infoObj.email || '#',
-        lnkdIn: infoObj.linkedIn || '#',
-    }
-
-    return (`
-    <div class="card">
-
-                    <div class="foto-wrapper">
-                        <div class="foto" style="background-image: url('${picture}')">
-                        </div>
-                        <div class="contactsMobile">
-                            <a class="card-caption-facebook" href="${links.fb}"><i
-                                    class="fab icon fa-2x fa-facebook-square"></i></a>
-
-                            <a class="card-caption-twitter" href="${links.twt}"><i
-                                    class="fab icon fa-2x fa-twitter-square"></i></a>
-
-                            <a class="card-caption-mail" href="${links.email}">
-                                <i class="far icon fa-2x fa-envelope"></i></a>
-                            <a class="card-caption-linkedin" href="${links.lnkdIn}"><i
-                                    class="fab icon fa-2x fa-linkedin"></i></a>
-                        </div>
-
-                    </div>
-                    <div class="info">
-                        <div class="short-info-container line-after">
-                            <div class="shortInfo">
-                                <h4 class="shortInfoHeader">${name} ${surname}</h4>
-                                <p>${profession} ${exp}</p>
-                            </div>
-                        </div>
-                        <div class="detailed-info">
-                            <p>${shortInfo}</p>
-                        </div>
-
-                    </div>
-                </div>
-
-    `)
-}
 
 function createScheduleObj(infoObj) {
     let timeArr = [];

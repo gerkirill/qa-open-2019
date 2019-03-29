@@ -4,14 +4,14 @@
     <div class="foto" style="background-image: url({{pic}})">
     </div>
     <div class="contactsMobile">
-      <a class="card-caption-facebook" href="https://www.facebook.com/aleksey.vastlandov"><i
+      <a class="card-caption-facebook" target="_blank" href="{{facebook}}"><i
           class="fab icon fa-2x fa-facebook-square"></i></a>
 
-      <a class="card-caption-twitter" href="#"><i class="fab icon fa-2x fa-twitter-square"></i></a>
+      <a class="card-caption-twitter" target="_blank" href="{{twitter}}"><i class="fab icon fa-2x fa-twitter-square"></i></a>
 
-      <a class="card-caption-mail" href="#">
+      <a class="card-caption-mail" target="_blank" href="mailto:{{email}}">
         <i class="far icon fa-2x fa-envelope"></i></a>
-      <a class="card-caption-linkedin" href="https://www.linkedin.com/in/aleksey-voloshin-7b029146"><i
+      <a class="card-caption-linkedin" target="_blank" href="{{linkedIn}}"><i
           class="fab icon fa-2x fa-linkedin"></i></a>
     </div>
 
@@ -19,13 +19,12 @@
   <div class="info">
     <div class="short-info-container line-after">
       <div class="shortInfo">
-        <h4 class="shortInfoHeader">Волошин Олексій Анатолійович</h4>
-        <p>QA - aвтоматизатор, ментор. Більше 5 років досвіду в автоматизації.</p>
+        <h4 class="shortInfoHeader">{{name}} {{surname}}</h4>
+        <p>{{profession}} {{experience}}</p>
       </div>
     </div>
     <div class="detailed-info">
-      <p>Олексій працює в IT з 2009 року, більше 5 років займається автоматизацією. Також проводить тренінги, воркшопи
-        та курси. З 2016 року працює в компанії GlobalLogic.</p>
+      <p>{{shortInfo}}</p>
     </div>
 
   </div>

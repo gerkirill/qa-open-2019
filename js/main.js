@@ -9,6 +9,79 @@ new universalParallax().init({
 
 import { events, baseDateLocale, eventDateSource, shortInfo } from './speakers-info-mock';
 
+let timer = setInterval(countdown, 1000);
+
+function countdown() {
+    const eventDate = new Date(eventDateSource).getTime();
+    const today = Date.now();
+    const diff = eventDate - today;
+
+    if (diff < 0) {
+        clearTimeout(timer);
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
+    let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
+    let seconds = Math.floor(diff % (1000 * 60) / 1000);
+
+    const text = [
+        { value: days, stringRepresentations: ['днів', 'день', 'дні'] },
+        { value: hours, stringRepresentations: ['годин', 'година', 'години'] },
+        { value: minutes, stringRepresentations: ['хвилин', 'хвилина', 'хвилини'] },
+        { value: seconds, stringRepresentations: ['секунд', 'секунда', 'секунди'] },
+    ];
+
+    let outputArr = [];
+
+    text.forEach((item, index) => {
+        if (item.value < 20) {
+            if (item.value === 1) {
+                outputArr[index] = item.stringRepresentations[1];
+            }
+            else if (item.value < 5 && item.value !== 0) {
+                outputArr[index] = item.stringRepresentations[2];
+            }
+            else {
+                outputArr[index] = item.stringRepresentations[0];
+            }
+        }
+        else {
+            if (item.value % 10 === 1) {
+                outputArr[index] = item.stringRepresentations[1];
+            }
+            else if (item.value % 10 < 5 && item.value % 10 !== 0) {
+                outputArr[index] = item.stringRepresentations[2];
+            }
+            else {
+                outputArr[index] = item.stringRepresentations[0];
+            }
+        }
+    });
+    if (hours < 10) {
+        hours = '0' + hours;
+    }
+    if (minutes < 10) {
+        minutes = '0' + minutes;
+    }
+    if (seconds < 10) {
+        seconds = '0' + seconds;
+    }
+
+    document.getElementById("countdown-days").textContent = days;
+    document.getElementById("countdown-hours").textContent = hours;
+    document.getElementById("countdown-minutes").textContent = minutes;
+    document.getElementById("countdown-seconds").textContent = seconds;
+
+    document.getElementById("countdown-days-text").textContent = outputArr[0];
+    document.getElementById("countdown-hours-text").textContent = outputArr[1];
+    document.getElementById("countdown-minutes-text").textContent = outputArr[2];
+    document.getElementById("countdown-seconds-text").textContent = outputArr[3];
+};
+
+countdown();
+
 $(document).ready(() => {
     // createAggendaTable(speakers, events);
     const thumbs = $('#thumbnails').slippry({
@@ -33,77 +106,6 @@ $(document).ready(() => {
         thumbs.goToSlide($(this).data('slide'));
         return false;
     });
-
-    let timer = setInterval(countdown, 1000);
-
-    function countdown() {
-        const eventDate = new Date(eventDateSource).getTime();
-        const today = Date.now();
-        const diff = eventDate - today;
-
-        if (diff < 0) {
-            clearTimeout(timer);
-            return;
-        }
-
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        let hours = Math.floor(diff % (1000 * 60 * 60 * 24) / (1000 * 60 * 60));
-        let minutes = Math.floor(diff % (1000 * 60 * 60) / (1000 * 60));
-        let seconds = Math.floor(diff % (1000 * 60) / 1000);
-
-        const text = [
-            { value: days, stringRepresentations: ['днів', 'день', 'дні'] },
-            { value: hours, stringRepresentations: ['годин', 'година', 'години'] },
-            { value: minutes, stringRepresentations: ['хвилин', 'хвилина', 'хвилини'] },
-            { value: seconds, stringRepresentations: ['секунд', 'секунда', 'секунди'] },
-        ];
-
-        let outputArr = [];
-
-        text.forEach((item, index) => {
-            if (item.value < 20) {
-                if (item.value === 1) {
-                    outputArr[index] = item.stringRepresentations[1];
-                }
-                else if (item.value < 5 && item.value !== 0) {
-                    outputArr[index] = item.stringRepresentations[2];
-                }
-                else {
-                    outputArr[index] = item.stringRepresentations[0];
-                }
-            }
-            else {
-                if (item.value % 10 === 1) {
-                    outputArr[index] = item.stringRepresentations[1];
-                }
-                else if (item.value % 10 < 5 && item.value % 10 !== 0) {
-                    outputArr[index] = item.stringRepresentations[2];
-                }
-                else {
-                    outputArr[index] = item.stringRepresentations[0];
-                }
-            }
-        });
-        if (hours < 10) {
-            hours = '0' + hours;
-        }
-        if (minutes < 10) {
-            minutes = '0' + minutes;
-        }
-        if (seconds < 10) {
-            seconds = '0' + seconds;
-        }
-
-        document.getElementById("countdown-days").textContent = days;
-        document.getElementById("countdown-hours").textContent = hours;
-        document.getElementById("countdown-minutes").textContent = minutes;
-        document.getElementById("countdown-seconds").textContent = seconds;
-
-        document.getElementById("countdown-days-text").textContent = outputArr[0];
-        document.getElementById("countdown-hours-text").textContent = outputArr[1];
-        document.getElementById("countdown-minutes-text").textContent = outputArr[2];
-        document.getElementById("countdown-seconds-text").textContent = outputArr[3];
-    };
 
     // smooth navigatin to anchors
     $(document).on('click', '.nav-link', function (event) {

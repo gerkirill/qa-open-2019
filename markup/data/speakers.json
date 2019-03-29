@@ -70,5 +70,17 @@
     "twitter": "#",
     "email": "#",
     "linkedIn": ""
+  },
+  {
+    "name": "Антон",
+    "surname": "Мужайло",
+    "pic": "./images/speakers/anton_muzhailo.jpg",
+    "profession": "GlobalLogic, Kyiv",
+    "experience": "",
+    "shortInfo": "",
+    "facebook": "",
+    "twitter": "#",
+    "email": "#",
+    "linkedIn": ""
   }
 ]

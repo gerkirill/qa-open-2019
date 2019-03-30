@@ -1,7 +1,6 @@
 import universalParallax from './universal-parallax';
-
-import WOW from '../lib/wow';
- new WOW().init();
+import WOW from 'wow.js';
+new WOW().init();
 
 new universalParallax().init({
     speed: 10.0

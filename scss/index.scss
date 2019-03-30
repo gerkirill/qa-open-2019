@@ -1,3 +1,20 @@
+.animated.slow {
+  animation-duration: 2s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+
 .header {
   background: none !important;
   padding-left: 10%;

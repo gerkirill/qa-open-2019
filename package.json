@@ -6,7 +6,9 @@
     "build": "parcel build markup/index.hbs --no-cache --public-url ./",
     "prestart": "rimraf dist",
     "start": "parcel markup/index.hbs",
-    "serve": "serve -s dist"
+    "serve": "serve -s dist",
+    "predeploy": "npm run build",
+    "deploy": "scp -r ./dist/* ubuntu@moydomen.com:/home/ubuntu/www/dev.qaopen.org/src"
   },
   "devDependencies": {
     "jquery": "^3.3.1",

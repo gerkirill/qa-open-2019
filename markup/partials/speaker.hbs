@@ -4,15 +4,29 @@
     <div class="foto" style="background-image: url({{pic}})">
     </div>
     <div class="contactsMobile">
-      <a class="card-caption-facebook" target="_blank" href="{{facebook}}"><i
-          class="fab icon fa-2x fa-facebook-square"></i></a>
+      {{#if facebook}}
+      <a class="card-caption-facebook" target="_blank" href="{{facebook}}">
+        <i class="fab icon fa-2x fa-facebook-square"></i>
+      </a>
+      {{/if}}
 
-      <a class="card-caption-twitter" target="_blank" href="{{twitter}}"><i class="fab icon fa-2x fa-twitter-square"></i></a>
+      {{#if twitter}}
+      <a class="card-caption-twitter" target="_blank" href="{{twitter}}">
+        <i class="fab icon fa-2x fa-twitter-square"></i>
+      </a>
+      {{/if}}
 
+      {{#if email}}
       <a class="card-caption-mail" target="_blank" href="mailto:{{email}}">
-        <i class="far icon fa-2x fa-envelope"></i></a>
-      <a class="card-caption-linkedin" target="_blank" href="{{linkedIn}}"><i
-          class="fab icon fa-2x fa-linkedin"></i></a>
+        <i class="far icon fa-2x fa-envelope"></i>
+      </a>
+      {{/if}}
+
+      {{#if linkedIn}}
+      <a class="card-caption-linkedin" target="_blank" href="{{linkedIn}}">
+        <i class="fab icon fa-2x fa-linkedin"></i>
+      </a>
+      {{/if}}
     </div>
 
   </div>

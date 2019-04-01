@@ -427,12 +427,13 @@
 }
 
 .contactsMobile {
-  justify-content: space-evenly;
+  justify-content: center;
   display: flex;
   padding: 10px;
 }
 
 .contactsMobile a {
+  margin: 3px;
   color: #f25421;
   transition: color 0.3s;
   font-size: 75%;

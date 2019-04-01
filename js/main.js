@@ -6,7 +6,7 @@ new universalParallax().init({
     speed: 10.0
 });
 
-import { events, baseDateLocale, eventDateSource, shortInfo } from './speakers-info-mock';
+import { baseDateLocale, eventDateSource, shortInfo } from './speakers-info-mock';
 
 let timer = setInterval(countdown, 1000);
 
@@ -162,44 +162,6 @@ function createScheduleObj(infoObj) {
         scheduleObj[obj] = arr;
     })
     return scheduleObj;
-}
-
-
-function createAggendaTable(speakers, events) {
-    let tableText = '';
-    let counter = 1;
-
-    events
-        .sort((a, b) => a.startTime - b.startTime)
-        .forEach(event => {
-
-            const time = event.startTime;
-
-            let raw = `
-            <tr>
-                <th class="mobile-hide" scope="row">${counter++}</th>
-                <td>${time}</td>`;
-
-            if (event.type === 'speech') {
-                if (event.firstSpeakerId) {
-                    const firstSpeaker = speakers.find(speaker => speaker.id === event.firstSpeakerId);
-                    const roomStr = `<td><h5 class="speaker_name">${firstSpeaker.name} ${firstSpeaker.surname} </h5> ${event.firstSpeechTopic} <br>${event.firstSpeechDesc}</td>`;
-                    raw += roomStr;
-                }
-                if (event.secondSpeakerId) {
-                    const secondSpeaker = speakers.find(speaker => speaker.id === event.secondSpeakerId);
-                    const roomStr = `<td><h5 class="speaker_name">${secondSpeaker.name} ${secondSpeaker.surname} </h5> ${event.secondSpeechTopic} <br>${event.secondSpeechDesc}</td>`;
-                    raw += roomStr;
-                }
-
-            } else {
-                raw += `<td><span class="text-center">${event.name}</span></td>`
-            }
-            raw += '</tr>';
-            tableText += raw;
-        });
-
-    $('#agenda-table').append(tableText);
 }
 
 

@@ -70,7 +70,7 @@
 #home {
   height: 100vh;
   color: white;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
 }
 
@@ -660,6 +660,10 @@
     width: auto;
   }
 
+  .svg-logo-desktop {
+    width: 7rem !important;
+  }
+
   .contactsMobile {
     display: flex;
   }
@@ -762,4 +766,8 @@
 
 .footer-items g {
   fill: #FFF;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.56) !important;
 }

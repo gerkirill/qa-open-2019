@@ -656,6 +656,10 @@
 
 
 @media screen and (max-width: 600px) {
+
+  .header {
+    background-color: rgba(52, 58, 64, 0.7) !important;
+  }
   .info {
     width: auto;
   }

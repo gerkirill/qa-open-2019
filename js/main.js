@@ -81,6 +81,12 @@ function countdown() {
 
 countdown();
 
+(function(){
+    $('.nav-item').on('click', function() {
+        $('.navbar-collapse').removeClass('show');
+    });
+})();
+
 $(document).ready(() => {
     // createAggendaTable(speakers, events);
     const thumbs = $('#thumbnails').slippry({

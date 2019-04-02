@@ -169,13 +169,3 @@ function createScheduleObj(infoObj) {
     })
     return scheduleObj;
 }
-
-
-function toggleTransparency() {
-    if (window.pageYOffset !== 0) return;
-    if (!$('#navbar')[0].classList.contains('scrolled')) {
-        $('#navbar').addClass('scrolled');
-    } else {
-        $('#navbar').removeClass('scrolled');
-    };
-}

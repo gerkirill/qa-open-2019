@@ -36,16 +36,16 @@
     "linkedIn": ""
   },
   {
-    "name": "Михайло",
-    "surname": "Довгий",
-    "pic": "./images/speakers/MyhailoDovgiy.jpg",
-    "profession": "Senior QA в Provectus. Почав займатися тестуванням ще до того як це стало 'мейнстрімом' — в студентські роки постійно приймав участь у різних Alfa- та Beta-тестах ігрових проектів.",
-    "experience": "За роки комерційного досвіду я був задіяний у більш ніж 15 проектах (від довгострокової участі у великому проекті, до екстримального занурення довжиною в sprint в невеликий проект, коли було необхідно в короткі сроки знайти максимум критичних недоліків та розібратися з ними до релізу).",
-    "shortInfo": "Найдовше працював в невеликих командах, в яких був єдиним QA. Саме тому на мені були всі процеси пов`язані з тестуванням - їх налагодження, виконання, звітність.",
-    "facebook": "https://www.facebook.com/AlmostFam0us",
+    "name": "Елліна",
+    "surname": "Азадова",
+    "pic": "./images/speakers/EllinaAzadova.jpg",
+    "profession": "QA Lead, DataArt",
+    "experience": "Має більше 10 років IT досвіду, з яких більше 6-ти працює у тестуванні та забезпеченні якості ПЗ. Є координатором спільноти QA Talk Kherson, ментором програм з практики, викладачем QA School Kherson, QA School Sofia, співавтором внутрішніх курсів з тестування ПЗ. Активний доповідач спільноти QA talk у Херсоні, Харкові, Одесі й Львові.",
+    "shortInfo": "Автор однієї з найцікавіших доповідей QA Open Mykolayiv 2018 за версією Mykolayiv QA Community!",
+    "facebook": "",
     "twitter": "",
     "email": "",
-    "linkedIn": "https://www.linkedin.com/in/mikhail-dovgiy-125545aa/"
+    "linkedIn": ""
   },
   {
     "name": "Максим",
@@ -70,17 +70,5 @@
     "twitter": "",
     "email": "",
     "linkedIn": "https://www.linkedin.com/in/serhii-bryt-11607948/"
-  },
-  {
-    "name": "Елліна",
-    "surname": "Азадова",
-    "pic": "./images/speakers/EllinaAzadova.jpg",
-    "profession": "QA Lead, DataArt",
-    "experience": "Має більше 10 років IT досвіду, з яких більше 6-ти працює у тестуванні та забезпеченні якості ПЗ. Є координатором спільноти QA Talk Kherson, ментором програм з практики, викладачем QA School Kherson, QA School Sofia, співавтором внутрішніх курсів з тестування ПЗ. Активний доповідач спільноти QA talk у Херсоні, Харкові, Одесі й Львові.",
-    "shortInfo": "Автор однієї з найцікавіших доповідей QA Open Mykolayiv 2018 за версією Mykolayiv QA Community!",
-    "facebook": "",
-    "twitter": "",
-    "email": "",
-    "linkedIn": ""
   }
 ]

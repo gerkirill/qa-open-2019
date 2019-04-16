@@ -736,17 +736,35 @@
 }
 .partners__main__wrapper {
   margin-bottom: 1%;
-  & .col-xs-8 {
+  & .partner__item {
     border: 1px solid #efeded;
     border-radius: 10px;
     padding: 15px 0;
+    float: left;
+    width: 48%;
+    margin: 1%;
   }
 }
+
+@media screen and (max-width: 1170px) {
+  .partner__item {
+    float: inherit !important;
+    margin: 1% auto 1% auto !important;
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .partner__item {
+    width: 96% !important;
+  }
+}
+
 .partners__img__wrapper {
   height: 160px;
   margin: auto;
   float: left;
-  width: 30%;
+  width: 35%;
   text-align: center;
 }
 .partners__img {
@@ -758,7 +776,7 @@
 
 .partners__description {
   float: left;
-  width: 70%;
+  width: 65%;
   padding: 0 3%;
   min-height: 100%;
   display: flex;

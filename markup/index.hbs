@@ -3,7 +3,7 @@ bodyclass: index
 language: ua
 meta:
 author: Kyrylo Gerasymenko
-description: QA Open 2019
+description: Mykolaiv QA Open
 keywords: QA, Conference, Mykolaiv, 2019
 robots: index, follow
 scripts:
@@ -21,7 +21,7 @@ stylesheets:
 - ../lib/slippry/slippry.css
 - ../lib/universal-parallax.min.css
 - ../scss/index.scss
-title: QA Open 2019
+title: Mykolaiv QA Open
 uri: /
 ---
 {{#extend "base"}}
@@ -61,7 +61,7 @@ uri: /
               H-336.9z"></path>
           </g>
           </svg>
-          QA OPEN 2019</a>
+          MYKOLAIV QA OPEN</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
     aria-label="Toggle navigation">
@@ -76,13 +76,13 @@ uri: /
         <a class="nav-link" href="#location">МІСЦЕ</a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="#prevEvent">ГАЛЕРЕЯ</a>
-      </li>
-      <li class="nav-item ">
         <a class="nav-link" href="#speakers">СПІКЕРИ</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="#agenda">РОЗКЛАД</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="#prevEvent">ГАЛЕРЕЯ</a>
       </li>
       <li class="nav-item ">
         <a class="nav-link" href="#partners">ПАРТНЕРИ</a>
@@ -95,12 +95,12 @@ uri: /
   <div class="extra-bg"></div>
   <div class="welcome-section-wrapper container">
     <h1 class="title">
-      QA OPEN <span class="title-muted">CONFERENCE</span>
+      MYKOLAIV QA OPEN <span class="title-muted">CONFERENCE</span>
     </h1>
-    {{!-- <h2 class="subtitle">
+    <h2 class="subtitle">
       <i class="far fa-calendar-alt"></i> <span class="eventDate"></span> | Миколаїв
-    </h2> --}}
-    {{!-- <div class="countdown">
+    </h2>
+    <div class="countdown">
       <div class="countdown-item">
         <div id="countdown-days">00</div>
         <div class="countdown-text" id="countdown-days-text">днів</div>
@@ -121,8 +121,8 @@ uri: /
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSexzZ6w5e2YxF89sKryHaKTP04FQdRu5V_vYP6qFp3bG9ZCFQ/viewform"
       class="btn-register" target="_blank" onClick="ga('send', 'event', 'Register', 'Click', 'Registration link click');">
       Зареєструватись
-    </a> --}}
-    <h2 class="subtitle">
+    </a>
+    {{!-- <h2 class="subtitle">
        Конференція завершена
     </h2>
     <a href="https://www.dropbox.com/sh/4m16a9f0q9cyxz8/AAAG03vas0nHcEWPjpWRt3T6a?dl=0"
@@ -132,7 +132,7 @@ uri: /
     <a target="_blank" href="https://www.youtube.com/watch?v=ONI-7GCvWe0&list=PLU3IVk_XIyWz0RCpchP8VnZm4yzjxg7Xr"
       class="btn-register" target="_blank">
       Відео з конференції
-    </a>
+    </a> --}}
   </div>
 </section>
 <section class="container fadeIn slow" id="about">
@@ -184,18 +184,18 @@ uri: /
       </div>
       <div class="col-sm-12 col-md-6 px-4 margin-t75 ">
         <h2 class="text-center mt-md-3 mt-sm-1">Приєднуйтесь!</h2>
-        <p id="content-long" class="mt-1">Цього разу конференція відбудеться за адресою: ТРЦ "Кит", вул. Мала Морська,
-          108</p>
-        <p id="content-long" class="mt-1">Дата та час: 20 квітня (субота), з 10:00 до 17:00, початок реєстрації о 9:30
+        <p id="content-long" class="mt-1">Конференція проходитиме у ТРЦ "Кит" за адресою: вул. Мала Морська, 108.
         </p>
-        <p id="content-long" class="mb-4">Для участі у заході необхідно пройти попередню реєстрацію. Будь ласка,
-          зверніть увагу, що кількість місць обмежена. Після реєстрації очікуйте на лист щодо вашої участі.</p>
-
+        <p id="content-long" class="mt-1">Дата та час: 22 лютого (субота), з 10:00 до 17:00, початок реєстрації о 9:30.
+        </p>
+        <p id="content-long" class="mb-4">Для участі у заході необхідно пройти попередню реєстрацію. Будь ласка, зверніть увагу,
+          що кількість місць обмежена. Після реєстрації очікуйте на лист щодо вашої участі."
+        </p>
         <div class="text-center mt-md-2 mt-sm-4">
-          {{!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSexzZ6w5e2YxF89sKryHaKTP04FQdRu5V_vYP6qFp3bG9ZCFQ/viewform"
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSexzZ6w5e2YxF89sKryHaKTP04FQdRu5V_vYP6qFp3bG9ZCFQ/viewform"
             class="btn-register" target="_blank" onClick="ga('send', 'event', 'Register', 'Click', 'Registration link click');">
             Зареєструватись
-          </a> --}}
+          </a>
         </div>
 
       </div>
@@ -205,107 +205,6 @@ uri: /
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.6778752534785!2d31.994058030872342!3d46.953419886325115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5cbe6aa75adf7%3A0xb4c06fac0cb77a62!2z0JrQmNCiLCDQotCe0KDQk9Ce0JLQni3QoNCQ0JfQktCb0JXQmtCQ0KLQldCb0KzQndCr0Jkg0KbQldCd0KLQoA!5e0!3m2!1sen!2sua!4v1551964408122"
     frameborder="0" id="map" allowfullscreen></iframe>
 </section>
-<section id="prevEvent" class="wow fadeIn slow" data-parallax="scroll">
-
-  <div class="prevEvent-header section-header">
-    <h5 class="subtitle text-center">Як це відбувалося</h5>
-    <h2 class="line-after">
-      QA OPEN 2018
-    </h2>
-    <div class="pic-gallery mobile-hide">
-      {{#each gallery as |column|}}
-       <div class="gallery-column">
-        <ul>
-          {{#each column as |url|}}
-          <li>
-            <a href="{{url}}" data-lightbox="Conference">
-              <img
-                src="{{url}}" data-toggle="modal" data-target="#carousel-pic">
-            </a>
-          </li>
-          {{/each}}
-        </ul>
-       </div>
-      {{/each}}
-    </div>
-  </div>
-  <div class="container" id="slider-mobile">
-    <div class="row">
-      <div class="col-12">
-        <div>
-          <ul id="thumbnails">
-            <li>
-              <a href="#slide1">
-                <img src="./images/QA open -2018/_IGP5787.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide2">
-                <img src="./images/QA open -2018/_IGP5522.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide3">
-                <img src="./images/QA open -2018/_IGP5509.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide4">
-                <img src="./images/QA open -2018/_IGP5518.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide5">
-                <img src="./images/QA open -2018/_IGP5528.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide6">
-                <img src="./images/QA open -2018/_IGP5576.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide7">
-                <img src="./images/QA open -2018/_IGP5717.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide8">
-                <img src="./images/QA open -2018/_IGP5791.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide9">
-                <img src="./images/QA open -2018/_IGP5797.jpg">
-              </a>
-            </li>
-            <li>
-              <a href="#slide10">
-                <img src="./images/QA open -2018/_IGP5804.jpg">
-              </a>
-            </li>
-          </ul>
-          <div class="thumb-box">
-            <ul class="thumbs">
-              <li><a href="#1" data-slide="1"><img src="./images/QA open -2018/_IGP5787.jpg"></a></li>
-              <li><a href="#2" data-slide="2"><img src="./images/QA open -2018/_IGP5522.jpg"></a></li>
-              <li><a href="#3" data-slide="3"><img src="./images/QA open -2018/_IGP5509.jpg"></a></li>
-              <li><a href="#4" data-slide="4"><img src="./images/QA open -2018/_IGP5518.jpg"></a></li>
-              <li><a href="#5" data-slide="5"><img src="./images/QA open -2018/_IGP5528.jpg"></a></li>
-              <li><a href="#6" data-slide="6"><img src="./images/QA open -2018/_IGP5576.jpg"></a></li>
-              <li><a href="#7" data-slide="7"><img src="./images/QA open -2018/_IGP5717.jpg"></a></li>
-              <li><a href="#8" data-slide="8"><img src="./images/QA open -2018/_IGP5791.jpg"></a></li>
-              <li><a href="#9" data-slide="9"><img src="./images/QA open -2018/_IGP5797.jpg"></a></li>
-              <li><a href="#10" data-slide="10"><img src="./images/QA open -2018/_IGP5804.jpg"></a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 <section id="speakers" class="wow fadeIn slow">
   <div id="speakersParallax" class="parallax speakers-parallax"></div>
   <div class="extra-bg"></div>
@@ -314,9 +213,9 @@ uri: /
       <h2 class="line-after">СПІКЕРИ</h2>
     </div>
     <div class="speakers-body">
-    {{#each speakers}}
+    {{!-- {{#each speakers}}
       {{> speaker}}
-    {{/each}}
+    {{/each}} --}}
     </div>
   </div>
 </section>
@@ -328,7 +227,7 @@ uri: /
       <i>* Інформація стосовно розкладу буде уточнюватись та доповнюватись.</i>
     </div>
     <div class="agenda-body">
-      <table class="table table-hover agenda-table">
+      {{!-- <table class="table table-hover agenda-table">
         <thead>
           <tr class="agenda-table-header">
             <th scope="col">Початок</th>
@@ -450,7 +349,121 @@ uri: /
             <td><span class="text-center">Завершення конференції</span></td>
           </tr>
         </tbody>
-      </table>
+      </table> --}}
+    </div>
+  </div>
+</section>
+
+<section id="prevEvent" class="wow fadeIn slow" data-parallax="scroll">
+
+  <div class="prevEvent-header section-header">
+    <h5 class="subtitle text-center">Як це відбувалося</h5>
+    <div class="row mobile-hide">
+      <div class="col-6">
+        <h2 class="line-after">
+          QA OPEN 2018
+        </h2>
+      </div>
+      <div class="col-6">
+        <h2 class="line-after">
+          QA OPEN 2019
+        </h2>
+      </div>
+    </div>
+    <h2 class="line-after mobile-show">
+      QA OPEN 2018 & QA OPEN 2019
+    </h2>
+    <div class="pic-gallery mobile-hide">
+      {{#each gallery as |column|}}
+       <div class="gallery-column">
+        <ul>
+          {{#each column as |url|}}
+          <li>
+            <a href="{{url}}" data-lightbox="Conference">
+              <img
+                src="{{url}}" data-toggle="modal" data-target="#carousel-pic">
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+       </div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="container" id="slider-mobile">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <ul id="thumbnails">
+            <li>
+              <a href="#slide1">
+                <img src="./images/QA open -2018/_IGP5787.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide2">
+                <img src="./images/QA open -2018/_IGP5522.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide3">
+                <img src="./images/QA open -2018/_IGP5509.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide4">
+                <img src="./images/QA open -2018/_IGP5518.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide5">
+                <img src="./images/QA open -2018/_IGP5528.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide6">
+                <img src="./images/QA open -2018/_IGP5576.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide7">
+                <img src="./images/QA open -2018/_IGP5717.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide8">
+                <img src="./images/QA open -2018/_IGP5791.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide9">
+                <img src="./images/QA open -2018/_IGP5797.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide10">
+                <img src="./images/QA open -2018/_IGP5804.jpg">
+              </a>
+            </li>
+          </ul>
+          <div class="thumb-box">
+            <ul class="thumbs">
+              <li><a href="#1" data-slide="1"><img src="./images/QA open -2018/_IGP5787.jpg"></a></li>
+              <li><a href="#2" data-slide="2"><img src="./images/QA open -2018/_IGP5522.jpg"></a></li>
+              <li><a href="#3" data-slide="3"><img src="./images/QA open -2018/_IGP5509.jpg"></a></li>
+              <li><a href="#4" data-slide="4"><img src="./images/QA open -2018/_IGP5518.jpg"></a></li>
+              <li><a href="#5" data-slide="5"><img src="./images/QA open -2018/_IGP5528.jpg"></a></li>
+              <li><a href="#6" data-slide="6"><img src="./images/QA open -2018/_IGP5576.jpg"></a></li>
+              <li><a href="#7" data-slide="7"><img src="./images/QA open -2018/_IGP5717.jpg"></a></li>
+              <li><a href="#8" data-slide="8"><img src="./images/QA open -2018/_IGP5791.jpg"></a></li>
+              <li><a href="#9" data-slide="9"><img src="./images/QA open -2018/_IGP5797.jpg"></a></li>
+              <li><a href="#10" data-slide="10"><img src="./images/QA open -2018/_IGP5804.jpg"></a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -534,7 +547,7 @@ uri: /
         <a id="card-caption-linkedin" href="https://www.linkedin.com/company/globallogic/" target="_blank"><i class="fab link card-caption fa-linkedin"></i></a>
       </div>
     </div>
-    <span class="copyright mobile-block">2019 Copyright GlobalLogic. All rights reserved.</span>
+    <span class="copyright mobile-block">2020 Copyright GlobalLogic. All rights reserved.</span>
   </div>
 </footer>
 {{/content}}

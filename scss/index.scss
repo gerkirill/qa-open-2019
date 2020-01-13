@@ -212,6 +212,10 @@
   width: 100%;
 }
 
+.mobile-show {
+  display: none;
+}
+
 .location-description {
   font-size: 1.5rem;
 }
@@ -557,7 +561,7 @@
     display: none;
   }
 
-  .mobile-block {
+  .mobile-block, .mobile-show {
     display: block;
   }
 
@@ -684,7 +688,7 @@
     display: none;
   }
 
-  .mobile-block {
+  .mobile-block, .mobile-show {
     display: block;
   }
 

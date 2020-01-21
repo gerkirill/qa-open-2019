@@ -211,11 +211,12 @@ uri: /
   <div class="container">
     <div class="speakers-header section-header">
       <h2 class="line-after">СПІКЕРИ</h2>
+      <i>* Інформація стосовно спiкерiв буде уточнюватись та доповнюватись.</i>
     </div>
     <div class="speakers-body">
-    {{!-- {{#each speakers}}
+    {{#each speakers}}
       {{> speaker}}
-    {{/each}} --}}
+    {{/each}}
     </div>
   </div>
 </section>
@@ -227,129 +228,145 @@ uri: /
       <i>* Інформація стосовно розкладу буде уточнюватись та доповнюватись.</i>
     </div>
     <div class="agenda-body">
-      {{!-- <table class="table table-hover agenda-table">
+      <table class="table table-hover agenda-table">
         <thead>
           <tr class="agenda-table-header">
             <th scope="col">Початок</th>
-            <th scope="col">Кімната №1</th>
+            <th scope="col">Перший поток</th>
+            <th scope="col">Другий поток</th>
           </tr>
         </thead>
         <tbody id="agenda-table">
           <tr>
             <td>9:30</td>
             <td><span class="text-center">Реєстрація</span></td>
+            <td><span class="text-center">Реєстрація</span></td>
           </tr>
           <tr>
             <td>10:00</td>
+            <td><span class="text-center">Відкриття конференції</span></td>
             <td><span class="text-center">Відкриття конференції</span></td>
           </tr>
           <tr>
             <td>10:15</td>
             <td>
               <h5 class="speaker_name">Волошин  Олексій</h5>
-              <h6>Do Androids Dream Of Automation?</h6>
-              Як розвернути та настроїти для тестування Android SDK та Appium кількома способами?<br/>
-              Як знаходити та взаємодіяти з елементами Android додатків?<br/>
-              Як підготувати реальний телефон для автоматизації тестування та як працювати з емулятором.<br/>
-              Також будуть продемонстровані реальні приклади автоматизації додатків та тестування веб-сайтів в мобільному браузері
+              <h6>Інформація оновлюється...</h6>
+            </td>
+            <td>
+              <h5 class="speaker_name">Харчук Оксана</h5>
+              <h6>Інформація оновлюється...</h6>
             </td>
           </tr>
           <tr>
-            <td>10:55</td>
-            <td><span class="text-center">Перерва 10 хвилин</span></td>
+            <td>11:00</td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
           </tr>
           <tr>
-            <td>11:05</td>
+            <td>11:15</td>
             <td>
               <h5 class="speaker_name">Антон Мужайло</h5>
-              <h6>Risk based Testing approaches in Agile</h6>
-              <p>
-                Agile підхід до розробки насьогодні широко використовується по всьому світу, але, незважаючі на його переваги, люди часто розчаровуються через його недоліки. Неточні оцінки, неможливість передбачити кількість дефектів та змін, невірне розташування пріорітетів та сил у тестуванні – загальновідомі причини провалу Agile-проектів. Тестування, що базується на ризиках в основному націлено на вірну пріоретизацію та фокусування тестових зусиль, що дозволяє нам знаходити найбільш важливі дефекти на ранніх етапах тестування, що, в свою чергу, пом’якшує наслідки неточних оцінок. У рамках даної теми ми розглянемо переваги використання тестування, що базується на ризиках у Agile. Найбільша увага буде приділена різним технікам тестування, що базується на ризиках, як легковаговим (PRAM, PRiSMA, SST), так і важковаговим як FMEA та FTA. Ми поговоримо про їх порівняння, критеріям вибору та підходах до застосування на наших проектах.
-              </p>
+              <h6>Інформація оновлюється...</h6>
             </td>
-          </tr>
-          <tr>
-            <td>11:45</td>
-            <td><span class="text-center">Перерва 15 хвилин</span></td>
+            <td>
+              <h5 class="speaker_name">Тетяна Трущенко</h5>
+              <h6>Інформація оновлюється...</h6>
+            </td>
           </tr>
           <tr>
             <td>12:00</td>
-            <td>
-              <h5 class="speaker_name">Сергiй Радов</h5>
-              <h6>How to identify workload model for a performance test?</h6>
-              <p>
-              The goal of this talk shows up the essential steps needed to create a performance test setup from scratch. The main idea is to eliminate fear due to difficulties and fulfill missing puzzles in attendees knowledge, give them a brief understanding of what is needed to uncover black box known as performance testing and workload analysis. </p> 
-
-              <p>We will go throughout all aspects such as gathering performance requirements to tests analysis. Also, we will try to show the ability to experiment with received results to avoid hidden pitfalls in tests results comparisons.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>12:40</td>
-            <td><span class="text-center">Перерва 10 хвилин</span></td>
-          </tr>
-          <tr>
-            <td>12:50</td>
-            <td>
-              <h5 class="speaker_name">Сергій Брит</h5>
-              <h6>Selenide. Пишемо тести швидко та стабільно.</h6>
-              <p>
-                Про Selenium говорять багато, багато написано и знято на відео.<br/>
-                Це дуже потужний інструмент для тестування веб і не тільки.<br/>
-                Але якщо вам потрібно писати тесті швидко, якщо у вас немає часу для налаштування всієї тестової інфраструктури, а тести потрібні, або якщо у вас просто немає спеціаліста з автоматизованного тестування.<br/>
-                На допомогу прийде Selenide. Це проста бібліотека на Java, яка дозволяе швидко писати тести, запускати їх і не паритись про налаштування.<br/>
-                В цій доповіді я хотів би показати не різницю між Selenium і Selenide, а хотів би розповісти, що саме розробники останнього зробили щоб полегшити нам життя.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>13:30</td>
-            <td><span class="text-center">Обідня перерва 13:30 - 14:30</span></td>
-          </tr>
-          <tr>
-            <td>14:30</td>
-            <td>
-              <h5 class="speaker_name">Антон Мужайло</h5>
-              <h6>Using classical estimation techniques</h6>
-              <p>You shouldn't invent your own wheel to do the test estimation. There are well-known estimation techniques that 
-                would fit your needs. Proper test estimation should be based on specific values and visible to everyone.
-                We will take a look closely at specific problems engineers are facing during estimation and will pay special
-                attention to the case study.</p>
-            </td>
-          </tr>
-          <tr>
-            <td>15:10</td>
-            <td><span class="text-center">Перерва 10 хвилин</span></td>
-          </tr>
-          <tr>
-            <td>15:20</td>
-            <td>
-              <h5 class="speaker_name">Максим Фомічов</h5>
-              <h6>"Code less" автоматизація тестування.</h6>
-              <p>
-                Спробуємо з вами розібратися чи можливо для Manual QA автоматизувати свою роботи не маючи навичок програмування.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>16:00</td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
             <td><span class="text-center">Перерва 15 хвилин</span></td>
           </tr>
           <tr>
-            <td>16:15</td>
+            <td>12:15</td>
             <td>
-              <h5 class="speaker_name">Елліна Азадова</h5>
-              <h6>Емоційний інтелект, або як не з'їхати з глузду в умовах складного та динамічного проекту</h6>
-              <p>
-                Релізи два рази на тиждень… Кількість багів постійно зростає... Строки горять... Робота в режимі овертайму може демотивувати команду та призвести до емоційного вигорання. Як цьому запобігти, якщо ситуацію змінити неможливо. На прикладах із власного досвіду продемонструємо, як зміна відношення до роботи в такому проекті зможе реально допомогти та які прийоми для цього існують.
-              </p>
+              <h5 class="speaker_name">Ольга Кузьменко</h5>
+              <h6>Інформація оновлюється...</h6>
+            </td>
+            <td>
+              <h5 class="speaker_name">Волошин Олексій</h5>
+              <h6>Інформація оновлюється...</h6>
             </td>
           </tr>
           <tr>
+            <td>13:00</td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+          </tr>
+          <tr>
+            <td>13:15</td>
+            <td>
+              <h5 class="speaker_name">Сергій Брит</h5>
+              <h6>Selenide. Tips and tricks</h6>
+              1. Вбудований webdrivermanager<br/>
+              2. Профілювання запуску<br/>
+              3. Вбудований проксі і як читати трафік<br/>
+              4. Як завантажити файл (без проксі, з проксі, з інтерсептером)<br/>
+              5. Трохи про колекції<br/>
+              6. Кастомні conditions
+            </td>
+            <td>
+              <h5 class="speaker_name">Антон Мужайло</h5>
+              <h6>Інформація оновлюється...</h6>
+            </td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td><span class="text-center">Обідня перерва 14:00 - 15:00</span></td>
+            <td><span class="text-center">Обідня перерва 14:00 - 15:00</span></td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td>
+              <h5 class="speaker_name">Денис Жевнер</h5>
+              <h6>Інформація оновлюється...</h6>
+            </td>
+            <td>
+              <h5 class="speaker_name">Інформація оновлюється</h5>
+              {{!-- <h6>Інформація оновлюється...</h6> --}}
+            </td>
+          </tr>
+          <tr>
+            <td>15:45</td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td>
+              <h5 class="speaker_name">Елліна Азадова</h5>
+              <h6>Інформація оновлюється...</h6>
+            </td>
+            <td>
+              <h5 class="speaker_name">Інформація оновлюється</h5>
+              {{!-- <h6>Інформація оновлюється...</h6> --}}
+            </td>
+          </tr>
+          <tr>
+            <td>16:45</td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+            <td><span class="text-center">Перерва 15 хвилин</span></td>
+          </tr>
+          <tr>
             <td>17:00</td>
+            <td>
+              <h5 class="speaker_name">Інформація оновлюється</h5>
+              {{!-- <h6>Інформація оновлюється...</h6> --}}
+            </td>
+            <td>
+              <h5 class="speaker_name">Інформація оновлюється</h5>
+              {{!-- <h6>Інформація оновлюється...</h6> --}}
+            </td>
+          </tr>
+          <tr>
+            <td>17:40</td>
+            <td><span class="text-center">Завершення конференції</span></td>
             <td><span class="text-center">Завершення конференції</span></td>
           </tr>
         </tbody>
-      </table> --}}
+      </table>
     </div>
   </div>
 </section>
@@ -359,36 +376,67 @@ uri: /
   <div class="prevEvent-header section-header">
     <h5 class="subtitle text-center">Як це відбувалося</h5>
     <div class="row mobile-hide">
-      <div class="col-6">
-        <h2 class="line-after">
-          QA OPEN 2018
-        </h2>
-      </div>
-      <div class="col-6">
+      <div class="col-12">
         <h2 class="line-after">
           QA OPEN 2019
         </h2>
+        <div class="prev_content">
+          <h2 class="subtitle">
+            Конференція завершена
+          </h2>
+          <a href="https://www.dropbox.com/sh/4m16a9f0q9cyxz8/AAAG03vas0nHcEWPjpWRt3T6a?dl=0"
+            class="btn-register" target="_blank">
+            Фото з конференції
+          </a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=ONI-7GCvWe0&list=PLU3IVk_XIyWz0RCpchP8VnZm4yzjxg7Xr"
+            class="btn-register" target="_blank">
+            Відео з конференції
+          </a>
+        </div>
+        <div class="pic-gallery mobile-hide">
+          {{#each galleryalt as |column|}}
+          <div class="gallery-column">
+            <ul>
+              {{#each column as |url|}}
+              <li>
+                <a href="{{url}}" data-lightbox="Conference">
+                  <img
+                    src="{{url}}" data-toggle="modal" data-target="#carousel-pic">
+                </a>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <div class="row mobile-hide margin-top">
+      <div class="col-12">
+        <h2 class="line-after">
+          QA OPEN 2018
+        </h2>
+        <div class="pic-gallery mobile-hide">
+        {{#each gallery as |column|}}
+        <div class="gallery-column">
+          <ul>
+            {{#each column as |url|}}
+            <li>
+              <a href="{{url}}" data-lightbox="Conference">
+                <img
+                  src="{{url}}" data-toggle="modal" data-target="#carousel-pic">
+              </a>
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+        {{/each}}
+      </div>
       </div>
     </div>
     <h2 class="line-after mobile-show">
       QA OPEN 2018 & QA OPEN 2019
     </h2>
-    <div class="pic-gallery mobile-hide">
-      {{#each gallery as |column|}}
-       <div class="gallery-column">
-        <ul>
-          {{#each column as |url|}}
-          <li>
-            <a href="{{url}}" data-lightbox="Conference">
-              <img
-                src="{{url}}" data-toggle="modal" data-target="#carousel-pic">
-            </a>
-          </li>
-          {{/each}}
-        </ul>
-       </div>
-      {{/each}}
-    </div>
   </div>
   <div class="container" id="slider-mobile">
     <div class="row">
@@ -445,6 +493,57 @@ uri: /
                 <img src="./images/QA open -2018/_IGP5804.jpg">
               </a>
             </li>
+
+            <li>
+              <a href="#slide11">
+                <img src="./images/QA open -2019/DSC_3650.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide12">
+                <img src="./images/QA open -2019/DSC_3849.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide13">
+                <img src="./images/QA open -2019/DSC_3739.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide14">
+                <img src="./images/QA open -2019/DSC_3442.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide15">
+                <img src="./images/QA open -2019/DSC_3468.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide16">
+                <img src="./images/QA open -2019/DSC_3485.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide17">
+                <img src="./images/QA open -2019/DSC_3551.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide18">
+                <img src="./images/QA open -2019/DSC_3749.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide19">
+                <img src="./images/QA open -2019/DSC_3609.jpg">
+              </a>
+            </li>
+            <li>
+              <a href="#slide20">
+                <img src="./images/QA open -2019/DSC_3793.jpg">
+              </a>
+            </li>
           </ul>
           <div class="thumb-box">
             <ul class="thumbs">
@@ -459,6 +558,18 @@ uri: /
               <li><a href="#9" data-slide="9"><img src="./images/QA open -2018/_IGP5797.jpg"></a></li>
               <li><a href="#10" data-slide="10"><img src="./images/QA open -2018/_IGP5804.jpg"></a>
               </li>
+
+              <li><a href="#11" data-slide="11"><img src="./images/QA open -2019/DSC_3650.jpg"></a></li>
+              <li><a href="#12" data-slide="12"><img src="./images/QA open -2019/DSC_3849.jpg"></a></li>
+              <li><a href="#13" data-slide="13"><img src="./images/QA open -2019/DSC_3739.jpg"></a></li>
+              <li><a href="#14" data-slide="14"><img src="./images/QA open -2019/DSC_3442.jpg"></a></li>
+              <li><a href="#15" data-slide="15"><img src="./images/QA open -2019/DSC_3468.jpg"></a></li>
+              <li><a href="#16" data-slide="16"><img src="./images/QA open -2019/DSC_3485.jpg"></a></li>
+              <li><a href="#17" data-slide="17"><img src="./images/QA open -2019/DSC_3551.jpg"></a></li>
+              <li><a href="#18" data-slide="18"><img src="./images/QA open -2019/DSC_3749.jpg"></a></li>
+              <li><a href="#19" data-slide="19"><img src="./images/QA open -2019/DSC_3609.jpg"></a></li>
+              <li><a href="#20" data-slide="20"><img src="./images/QA open -2019/DSC_3793.jpg"></a>
+              </li>
             </ul>
 
           </div>
@@ -471,6 +582,7 @@ uri: /
 <section id="partners" class="partners wow fadeIn slow">
   <div class="container">
     <h2 class="line-after text-center">ПАРТНЕРИ</h2>
+    {{!-- <h1 class="temp">¯\_(ツ)_/¯</h1> --}}
     <div class="row partners__main__wrapper">
       <div class="partner__item">
         <div class="partners__img__wrapper">
@@ -493,7 +605,7 @@ uri: /
         </div>
         <div class="partners__description">
           <h3>Денис Гончарук</h3>
-            Наш медіа-партнер, вiдео-оператор QA Open 2019. Людина, що дiйсно полюбляє те, чим займається.
+            Наш медіа-партнер, вiдео-оператор QA Open 2020. Людина, що дiйсно полюбляє те, чим займається.
         </div>
 
       </div>

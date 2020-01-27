@@ -3,7 +3,7 @@
   <div class="foto-wrapper">
     <div class="foto" style="background-image: url({{pic}})">
     </div>
-    <div class="contactsMobile">
+    {{!-- <div class="contactsMobile">
       {{#if facebook}}
       <a class="card-caption-facebook" target="_blank" href="{{facebook}}">
         <i class="fab icon fa-2x fa-facebook-square"></i>
@@ -27,14 +27,15 @@
         <i class="fab icon fa-2x fa-linkedin"></i>
       </a>
       {{/if}}
-    </div>
+    </div> --}}
 
   </div>
   <div class="info">
     <div class="short-info-container line-after">
       <div class="shortInfo">
         <h4 class="shortInfoHeader">{{name}} {{surname}}</h4>
-        <p>{{profession}} {{experience}}</p>
+        <strong>{{profession}}</strong>
+        <p>{{experience}}</p>
       </div>
     </div>
     <div class="detailed-info">

@@ -247,7 +247,7 @@
 }
 
 #location-square-background {
-  background: #f25421;
+  background: #ccc;
   position: absolute;
   top: 0;
   right: 0;
@@ -257,14 +257,14 @@
 }
 
 #location-square-content {
-  background: #1f1f1f;
-  color: rgb(202, 202, 202);
+  background: #333;
+  color: #fff;
   position: absolute;
   top: 10px;
   bottom: 0;
   right: 10px;
   left: 0;
-  padding: 8% 8% 5% 8%;
+  padding: 8% 5%;
 }
 
 #location-square-content-title {
@@ -275,13 +275,11 @@
 #location-square-content-date {
   font-size: 7rem;
   font-weight: 800;
-  color: #1f1f1f;
   line-height: 0.8;
 }
 #location-square-content-subtext {
-  margin-top: 10%;
+  margin-top: 3%;
   font-size: 1.1rem;
-  color: #f25421;
 }
 #location-square-content-text {
   position: relative;
@@ -491,7 +489,7 @@
 /* footer */
 
 .qa-logo {
-  max-width: 13em;
+  max-width: 17em;
   height: auto;
   float: right;
 }

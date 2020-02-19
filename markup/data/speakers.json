@@ -2,10 +2,10 @@
   {
     "name": "Сергій",
     "surname": "Бутенко",
-    "pic": "./images/speakers/default.png",
+    "pic": "./images/speakers/Sergii_Butenko.jpg",
     "profession": "Project Manager у GlobalLogic Kyiv",
-    "experience": "За майже 8 років працював як мануальний тестувальник та QA-автоматизатор на Desktop та Web автоматизації.",
-    "shortInfo": "Наразі Сергій займає позицію Project Manager у GlobalLogic та приймає участь у викладанні різних курсів у GlobalLogic.",
+    "experience": "В IT Сергій вже майже 8 років. За цей час працював як мануальний тестувальник та QA автоматизатор (Desktop та Web автомейшн).",
+    "shortInfo": "Наразі Сергій займає позицію Project Manager у GlobalLogic та приймає участь у викладанні різних курсів.",
     "facebook": "",
     "twitter": "",
     "email": "",
@@ -118,8 +118,7 @@
     "twitter": "",
     "email": "",
     "linkedIn": ""
-  }
-  ,
+  },
   {
     "name": "Антон",
     "surname": "Пелянський",
@@ -127,6 +126,18 @@
     "profession": "Test Automation Engineer у GlobalLogic Mykolaiv",
     "experience": "Маючи загальний досвід в IT більше 6-ти років, Антон працює в GlobalLogic вже рік. Переважно працює на healthcare проектах. В своїх автоматизаторських буднях використовує Postman, Java, Selenium, TypeScript.",
     "shortInfo": "Завжди відкритий до нових починань і з задоволенням ділиться своєю експертизою на внутрішніх та зовнішніх Tech Talk'ах",
+    "facebook": "",
+    "twitter": "",
+    "email": "",
+    "linkedIn": ""
+  },
+  {
+    "name": "Єва",
+    "surname": "Соколянська",
+    "pic": "./images/speakers/eva.jpeg",
+    "profession": "QA Automation у DataArt",
+    "experience": "У Єви за плечима більше 8 років досвіду як мануального, так і автоматизованого тестування десктопних, браузерних та мобільних додатків, одночасного поєднання ролей девелопера, девопса та тімліда у навчальному проекті. Має досвід автоматизації інтеграцій як з популярними сучасними технологіями, так і з вузькоспеціалізованими програмними комплексами й утилітами.",
+    "shortInfo": "Зараз Єва працює QA Automation в Одеському офісі DataArt.",
     "facebook": "",
     "twitter": "",
     "email": "",

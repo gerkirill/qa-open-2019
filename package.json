@@ -13,7 +13,7 @@
     "deploy:prod": "scp -r ./dist/* ubuntu@moydomen.com:/home/ubuntu/www/qaopen.org/web"
   },
   "devDependencies": {
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "node-sass": "^4.7.2",
     "parcel-bundler": "^1.4.1",
     "parcel-plugin-handlebars-benz": "^0.4.8",

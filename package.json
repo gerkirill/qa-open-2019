@@ -19,7 +19,7 @@
     "parcel-plugin-handlebars-benz": "^0.4.8",
     "popper.js": "^1.14.7",
     "rimraf": "^2.6.3",
-    "serve": "^6.4.8",
+    "serve": "^10.1.2",
     "wow.js": "^1.2.2"
   }
 }
